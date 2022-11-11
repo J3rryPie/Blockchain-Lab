@@ -17,7 +17,7 @@ contract CreditLimit {
     function expenses(uint travel, uint food, uint stay) public {
         require( creditLimit - travel - food - stay >= 0, "Cannot proceess this txn..");
         creditLimit = creditLimit - travel - food - stay;
-        //2019130019 - Adwait Hegde
+        //2019140032- Aayush Kawathekar
     }
 
     function resetCreditLimit() public {
